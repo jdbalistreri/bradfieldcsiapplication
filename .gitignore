@@ -4,3 +4,4 @@ env/
 .python_history
 __pycache__
 .pytest_cache
+.benchmarks/
