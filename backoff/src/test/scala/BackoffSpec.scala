@@ -68,7 +68,7 @@ class BackoffSpec extends FunSuite with DiagrammedAssertions {
     }
   }
 
-  test("should backoff exponentially when with jitter") {
+  test("should backoff exponentially with jitter") {
     Time.withCurrentTimeFrozen{ tc =>
       val callTracker = new CallTracker[Int, Int](response=10, maxCallsBeforeReturning=5)
       val fnWithBackoff = new BackoffManager[Int, Int](
