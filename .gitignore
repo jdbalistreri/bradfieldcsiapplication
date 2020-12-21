@@ -5,3 +5,7 @@ env/
 __pycache__
 .pytest_cache
 .benchmarks/
+
+target
+*.class
+.idea
